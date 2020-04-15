@@ -1,3 +1,6 @@
+#Author: Abhinav Gupta (2017A4PS0907G)
+#Working as on 15/04/2020 on https://swd.bits-goa.ac.in/
+
 import hashlib 
 import urllib.request
 from urllib.parse import urlparse
