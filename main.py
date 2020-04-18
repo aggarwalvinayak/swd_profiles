@@ -28,7 +28,7 @@ for item in output:
 
 	tempname = ('9120273977'+item).encode('utf-8')
 	try:
-		urllib.request.urlretrieve(url+str(hashlib.md5(tempname).hexdigest())+'.jpg'), os.path.join(os.getcwd(),'Images/'+str(item[:4])+'/', str(item+'.jpg'))
+		urllib.request.urlretrieve(url+str(hashlib.md5(tempname).hexdigest())+'.jpg', os.path.join(os.getcwd(),'Images/'+str(item[:4])+'/', str(item+'.jpg')))
 		print('Retreiving:',item,end='\r')
 	except:
 		print('.')
